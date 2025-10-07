@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "image": "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?w=400&h=400&fit=crop",
+    "title": "PhotoSnap",
+    "companyName": "SnapTech",
+    "description": "Capture and edit stunning photos with ease.",
+    "size": 45,
+    "reviews": 1200,
+    "ratingAvg": 4.6,
+    "downloads": 50000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 600 }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://via.placeholder.com/150",
+    "title": "FitnessPro",
+    "companyName": "HealthApp Inc.",
+    "description": "Track your workouts, calories, and health metrics.",
+    "size": 60,
+    "reviews": 950,
+    "ratingAvg": 4.4,
+    "downloads": 30000,
+    "ratings": [
+      { "name": "1 star", "count": 15 },
+      { "name": "2 star", "count": 25 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 350 },
+      { "name": "5 star", "count": 460 }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://via.placeholder.com/150",
+    "title": "Foodie",
+    "companyName": "YumTech",
+    "description": "Discover and order delicious meals from local restaurants.",
+    "size": 80,
+    "reviews": 1500,
+    "ratingAvg": 4.7,
+    "downloads": 75000,
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 35 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 740 }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://via.placeholder.com/150",
+    "title": "TravelMate",
+    "companyName": "GlobeTrek",
+    "description": "Plan trips, book flights, and explore destinations worldwide.",
+    "size": 95,
+    "reviews": 800,
+    "ratingAvg": 4.5,
+    "downloads": 40000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 80 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 390 }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://via.placeholder.com/150",
+    "title": "MindRelax",
+    "companyName": "CalmTech",
+    "description": "Meditation and relaxation app for stress relief.",
+    "size": 30,
+    "reviews": 1100,
+    "ratingAvg": 4.8,
+    "downloads": 60000,
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 50 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 635 }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "https://via.placeholder.com/150",
+    "title": "ShopEasy",
+    "companyName": "QuickBuy",
+    "description": "Online shopping app with easy checkout and deals.",
+    "size": 75,
+    "reviews": 900,
+    "ratingAvg": 4.3,
+    "downloads": 45000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 390 }
+    ]
+  },
+  {
+    "id": 7,
+    "image": "https://via.placeholder.com/150",
+    "title": "LearnSmart",
+    "companyName": "EduTech",
+    "description": "Interactive learning app for students of all ages.",
+    "size": 50,
+    "reviews": 700,
+    "ratingAvg": 4.2,
+    "downloads": 35000,
+    "ratings": [
+      { "name": "1 star", "count": 15 },
+      { "name": "2 star", "count": 25 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 340 }
+    ]
+  },
+  {
+    "id": 8,
+    "image": "https://via.placeholder.com/150",
+    "title": "WeatherNow",
+    "companyName": "SkyApps",
+    "description": "Get real-time weather updates and alerts.",
+    "size": 25,
+    "reviews": 600,
+    "ratingAvg": 4.1,
+    "downloads": 28000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 50 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 325 }
+    ]
+  }
+]
