@@ -8,14 +8,14 @@ const Hero = () => {
   return (
     <>
       <div className="flex justify-center mt-5">
-        <img className="w-[600px]" src={heroImage} alt="" />
+        <img className="px-5 lg:w-[600px]" src={heroImage} alt="" />
       </div>
 
       <div className="bg-linear-to-r from-[#632EE3] to-[#9F62F2] py-10">
         <h1 className="text-white mb-10 text-3xl">
           Trusted by Millions, Built for You
         </h1>
-        <div className="flex gap-20 justify-center text-white">
+        <div className="grid grid-cols-1 lg:flex gap-20 justify-center text-white">
           <div>
             <h1 className="text-sm opacity-70">Total Downloads</h1>
             <h1 className="text-4xl font-bold">29.6M</h1>
@@ -33,7 +33,18 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense
+        fallback={
+          <div>
+            <div className="flex w-52 flex-col gap-4 justify-center items-center mx-auto mt-5">
+              <div className="skeleton h-32 w-full"></div>
+              <div className="skeleton h-4 w-28"></div>
+              <div className="skeleton h-4 w-full"></div>
+              <div className="skeleton h-4 w-full"></div>
+            </div>
+          </div>
+        }
+      >
         <Trending homeData={homeData}></Trending>
       </Suspense>
     </>

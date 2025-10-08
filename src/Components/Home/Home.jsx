@@ -5,15 +5,15 @@ import AppStore from "../../assets/AppStore_png.png";
 
 const Home = () => {
   return (
-    <div className="max-w-[1280px] mx-auto text-center mt-5">
-      <h1 className="text-3xl font-bold">
+    <div className="max-w-[1280px] mx-auto bg-[#ebe8e8] text-center">
+      <h1 className="text-3xl font-bold p-2">
         We Build <br />{" "}
         <span className="bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
           Productive
         </span>{" "}
         Apps
       </h1>
-      <p className="text-[#627382] mt-5">
+      <p className="p-2 text-[#627382] lg:text-[#627382] mt-5">
         At HERO.IO , we craft innovative apps designed to make everyday life
         simpler, smarter, and more exciting. <br /> Our goal is to turn your
         ideas into digital experiences that truly make an impact.

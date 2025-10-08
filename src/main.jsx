@@ -7,6 +7,8 @@ import Root from "./Components/Root/Root";
 import Installation from "./Components/Installation/Installation";
 import Apps from "./Components/Apps/Apps";
 import Home from "./Components/Home/Home";
+import AppDetail from "./Components/AppDetail/AppDetail";
+import NotFound from "./Components/NotFound/NotFound";
 
 const router = createBrowserRouter([
   {
@@ -23,9 +25,14 @@ const router = createBrowserRouter([
         Component: Apps,
       },
       {
+        path: "/apps/:id",
+        Component: AppDetail,
+      },
+      {
         path: "/installation",
         Component: Installation,
       },
+      { path: "*", Component: NotFound },
     ],
   },
 ]);
