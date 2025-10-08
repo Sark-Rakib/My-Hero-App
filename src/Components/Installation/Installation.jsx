@@ -43,7 +43,7 @@ const Installation = () => {
         </p>
       </div>
       {/* Sort */}
-      <div className="flex justify-between items-center mt-4">
+      <div className="flex justify-between items-center font-semibold mt-4">
         <p>{installedApps.length + ""} Apps Found</p>
         <div className="flex justify-between items-center gap-2">
           <label className="font-semibold">Sort by Size:</label>
