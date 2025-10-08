@@ -6,7 +6,7 @@ const Apps = () => {
   const [appsData, setAppsData] = useState([]);
   const [search, setSearch] = useState("");
   const [filteredApps, setFilteredApps] = useState([]);
-  const [isLoading, setIsLoading] = useState(true); // 🔹 Loading state
+  const [isLoading, setIsLoading] = useState(true);
 
   // Fetch apps
   useEffect(() => {
@@ -15,7 +15,7 @@ const Apps = () => {
       .then((data) => {
         setAppsData(data);
         setFilteredApps(data);
-        setIsLoading(false); // 🔹 Loaded
+        setIsLoading(false);
       })
       .catch((err) => {
         console.error(err);

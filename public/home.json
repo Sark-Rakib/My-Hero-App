@@ -8,7 +8,7 @@
     "size": 85,
     "reviews": 32000000,
     "ratingAvg": 4.4,
-    "downloads": "1000M",
+    "downloads": "100M",
     "downloadLink": "https://play.google.com/store/apps/details?id=com.spotify.music",
     "ratings": [
       { "name": "1 star", "count": 250000 },
@@ -27,7 +27,7 @@
     "size": 70,
     "reviews": 150000000,
     "ratingAvg": 4.3,
-    "downloads": "1000M",
+    "downloads": "120M",
     "downloadLink": "https://play.google.com/store/apps/details?id=com.instagram.android",
     "ratings": [
       { "name": "1 star", "count": 500000 },
@@ -46,7 +46,7 @@
     "size": 90,
     "reviews": 60000000,
     "ratingAvg": 4.5,
-    "downloads": "1000M",
+    "downloads": "200M",
     "downloadLink": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically",
     "ratings": [
       { "name": "1 star", "count": 600000 },
@@ -65,7 +65,7 @@
     "size": 110,
     "reviews": 140000000,
     "ratingAvg": 4.5,
-    "downloads": "10000M",
+    "downloads": "500M",
     "downloadLink": "https://play.google.com/store/apps/details?id=com.google.android.youtube",
     "ratings": [
       { "name": "1 star", "count": 500000 },
@@ -84,7 +84,7 @@
     "size": 95,
     "reviews": 120000000,
     "ratingAvg": 4.2,
-    "downloads": "5000M",
+    "downloads": "400M",
     "downloadLink": "https://play.google.com/store/apps/details?id=com.facebook.katana",
     "ratings": [
       { "name": "1 star", "count": 800000 },
@@ -103,7 +103,7 @@
     "size": 65,
     "reviews": 30000000,
     "ratingAvg": 4.2,
-    "downloads": "1000M",
+    "downloads": "50M",
     "downloadLink": "https://play.google.com/store/apps/details?id=com.snapchat.android",
     "ratings": [
       { "name": "1 star", "count": 200000 },
@@ -122,7 +122,7 @@
     "size": 60,
     "reviews": 40000000,
     "ratingAvg": 4.0,
-    "downloads": "1000M",
+    "downloads": "70M",
     "downloadLink": "https://play.google.com/store/apps/details?id=com.twitter.android",
     "ratings": [
       { "name": "1 star", "count": 500000 },
@@ -141,7 +141,7 @@
     "size": 55,
     "reviews": 12000000,
     "ratingAvg": 4.5,
-    "downloads": "1000M",
+    "downloads": "100M",
     "downloadLink": "https://play.google.com/store/apps/details?id=org.telegram.messenger",
     "ratings": [
       { "name": "1 star", "count": 100000 },

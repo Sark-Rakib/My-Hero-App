@@ -11,10 +11,10 @@ const Footer = () => {
               <img className="h-7 w-7" src={logo} /> Hero Apps
             </h1>
             <p className="text-[#A1A1AA] text-sm">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              HERO.IO is a modern app marketplace where you can explore,
+              install, and manage amazing applications developed for millions of
+              users. Our mission is to deliver the best quality apps with smooth
+              UI/UX.
             </p>
           </div>
           <div>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import downImg from "../../assets/icon-downloads.png";
 import ratImg from "../../assets/icon-ratings.png";
+import { toast, ToastContainer } from "react-toastify";
 
 const Installation = () => {
   const [installedApps, setInstalledApps] = useState([]);
@@ -17,6 +18,11 @@ const Installation = () => {
     const updatedApps = installedApps.filter((app) => app.id !== id);
     setInstalledApps(updatedApps);
     localStorage.setItem("installedApps", JSON.stringify(updatedApps));
+
+    toast("App uninstalled successfully!", {
+      position: "top-center",
+      autoClose: 2000,
+    });
   };
 
   // Sort by size
@@ -74,7 +80,7 @@ const Installation = () => {
                     <img className="w-4 h-4" src={ratImg} />{" "}
                     <span className="text-[#FF8811]">{app.ratingAvg}</span>
                   </p>
-                  <p className="text-gray-700">Size: {app.size}Mb</p>
+                  <p className="text-gray-700">Size: {app.size}MB</p>
                 </div>
               </div>
             </div>
@@ -89,6 +95,7 @@ const Installation = () => {
           </div>
         ))}
       </div>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };

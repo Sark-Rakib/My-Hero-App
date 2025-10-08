@@ -14,6 +14,7 @@ import {
 } from "recharts";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Link } from "react-router";
 
 const AppDetail = () => {
   const location = useLocation();
@@ -48,9 +49,14 @@ const AppDetail = () => {
 
   if (!app) {
     return (
-      <div className="flex flex-col justify-center items-center min-h-screen">
+      <div className="flex flex-col justify-center items-center p-20">
         <img src={errorImg} className="w-64 h-64 mb-4 animate-pulse" />
-        <h2 className="text-2xl font-semibold text-gray-700">App not found!</h2>
+        <Link
+          to="/apps"
+          className="text-sm font-semibold text-white bg-[#00D390] px-6 py-2 mt-5 rounded"
+        >
+          Go To Apps
+        </Link>
       </div>
     );
   }
@@ -127,7 +133,7 @@ const AppDetail = () => {
       <div>
         <p>
           <span className="font-semibold text-lg">Description:</span> <br />
-          {app.description}
+          <span className="text-gray-600">{app.descriptions}</span>
         </p>
       </div>
 

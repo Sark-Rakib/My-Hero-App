@@ -59,7 +59,7 @@ const Navbar = () => {
           to="/home"
           className="flex items-center text-xl bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent font-bold"
         >
-          <img className="h-10 w-10 mr-2" src={logo} alt="Logo" />
+          <img className="h-10 w-10 ml-2" src={logo} alt="Logo" />
           HERO.IO
         </Link>
       </div>
