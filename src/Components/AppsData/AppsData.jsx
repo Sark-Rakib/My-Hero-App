@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const AppsData = ({ appsData }) => {
   const navigate = useNavigate();
 
-  if (!appsData || !Array.isArray(appsData)) return null; // ⚡ safeguard
+  if (!appsData || !Array.isArray(appsData)) return ""; //
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-5 p-5">
