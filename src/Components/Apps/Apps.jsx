@@ -6,16 +6,24 @@ const Apps = () => {
   const [appsData, setAppsData] = useState([]);
   const [search, setSearch] = useState("");
   const [filteredApps, setFilteredApps] = useState([]);
+  const [isLoading, setIsLoading] = useState(true); // 🔹 Loading state
 
+  // Fetch apps
   useEffect(() => {
     fetch("apps.json")
       .then((res) => res.json())
       .then((data) => {
         setAppsData(data);
         setFilteredApps(data);
+        setIsLoading(false); // 🔹 Loaded
+      })
+      .catch((err) => {
+        console.error(err);
+        setIsLoading(false);
       });
   }, []);
 
+  // Filter apps on search
   useEffect(() => {
     const filtered = appsData.filter((app) =>
       app.title.toLowerCase().includes(search.toLowerCase())
@@ -24,7 +32,8 @@ const Apps = () => {
   }, [search, appsData]);
 
   return (
-    <div className="max-w-[1280px] mx-auto bg-[#ebe8e8]">
+    <div className="max-w-[1280px] mx-auto bg-[#ebe8e8] min-h-screen">
+      {/* Header */}
       <div className="text-center p-2">
         <h1 className="font-bold text-3xl">Our All Applications</h1>
         <p className="text-[#627382] mt-2">
@@ -32,6 +41,7 @@ const Apps = () => {
         </p>
       </div>
 
+      {/* Search */}
       <div className="flex justify-between p-5">
         <h1 className="font-semibold">({filteredApps.length}) Apps Found</h1>
         <input
@@ -43,7 +53,20 @@ const Apps = () => {
         />
       </div>
 
-      {filteredApps.length > 0 ? (
+      {isLoading ? (
+        <div className="flex justify-center mt-10">
+          <span>
+            <div>
+              <div className="flex w-52 flex-col gap-4 justify-center items-center mx-auto mt-5">
+                <div className="skeleton h-32 w-full"></div>
+                <div className="skeleton h-4 w-28"></div>
+                <div className="skeleton h-4 w-full"></div>
+                <div className="skeleton h-4 w-full"></div>
+              </div>
+            </div>
+          </span>
+        </div>
+      ) : filteredApps.length > 0 ? (
         <AppsData appsData={filteredApps} />
       ) : (
         <div className="flex flex-col items-center mt-10 p-5">

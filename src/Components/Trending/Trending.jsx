@@ -17,7 +17,7 @@ const Trending = ({ homeData }) => {
         {data.map((item) => (
           <div key={item.id} className="p-4 bg-white rounded">
             <div>
-              <img className="rounded" src={item.image} />
+              <img className="rounded h-[300px] w-full" src={item.image} />
               <p>{item.description}</p>
               <div className="flex justify-between">
                 <p className="flex items-center gap-2 bg-[#F1F5E8] mt-2 p-1 rounded-sm text-[#00D390] font-semibold">

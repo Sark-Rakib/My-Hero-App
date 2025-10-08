@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import downImg from "../../assets/icon-downloads.png";
 import ratImg from "../../assets/icon-ratings.png";
 import revImg from "../../assets/icon-review.png";
+import errorImg from "../../assets/App-Error.png";
 import {
   BarChart,
   Bar,
@@ -16,7 +17,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const AppDetail = () => {
   const location = useLocation();
-  const { app } = location.state || null;
+  const { app } = location.state || "";
   const [installed, setInstalled] = useState(false);
 
   // Installed
@@ -45,6 +46,15 @@ const AppDetail = () => {
     }
   };
 
+  if (!app) {
+    return (
+      <div className="flex flex-col justify-center items-center min-h-screen">
+        <img src={errorImg} className="w-64 h-64 mb-4 animate-pulse" />
+        <h2 className="text-2xl font-semibold text-gray-700">App not found!</h2>
+      </div>
+    );
+  }
+
   return (
     <div className="max-w-[1280px] mx-auto bg-[#ebe8e8] px-5 py-5">
       {/* App Info */}
@@ -58,6 +68,8 @@ const AppDetail = () => {
         <div className="flex-1">
           <h1 className="text-3xl font-bold mb-4">{app.title}</h1>
           <p className="mb-4">{app.description}</p>
+
+          <hr className="bg-gray-50" />
 
           <div className="flex gap-10 mt-4">
             <p className="flex flex-col items-center">
@@ -93,7 +105,7 @@ const AppDetail = () => {
       <hr className="my-5" />
 
       {/* Ratings Chart */}
-      <h2 className="text-xl font-semibold mb-2 ml-2">Rating Chart</h2>
+      <h2 className="text-xl font-semibold mb-2 ml-8">Rating Chart</h2>
       <div className="w-full md:w-3/4 h-64">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart
