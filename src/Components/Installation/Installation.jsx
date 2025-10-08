@@ -71,7 +71,7 @@ const Installation = () => {
             key={app.id}
             className="flex justify-between items-center p-2 mt-5 bg-white rounded shadow"
           >
-            <div className="flex gap-4 items-center">
+            <div className="md:flex gap-4 items-center">
               <img className="w-10 h-10 rounded" src={app.image} />
               <div className="flex flex-col gap-1">
                 <h2 className="font-bold text-lg">{app.title}</h2>
