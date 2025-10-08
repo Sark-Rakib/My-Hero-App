@@ -26,9 +26,13 @@ const Installation = () => {
   };
 
   // Sort by size
-  const sortedApps = [...installedApps].sort((a, b) =>
-    sortOrder === "high" ? b.size - a.size : a.size - b.size
-  );
+  const sortedApps = [...installedApps].sort((a, b) => {
+    const aDownloads = parseInt(a.downloads.replace("M", ""));
+    const bDownloads = parseInt(b.downloads.replace("M", ""));
+    return sortOrder === "high"
+      ? bDownloads - aDownloads
+      : aDownloads - bDownloads;
+  });
 
   return (
     <div className="max-w-[1280px] mx-auto bg-[#ebe8e8] p-5">
