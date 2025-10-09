@@ -101,9 +101,7 @@ const Navbar = () => {
 
       <div className="navbar-end">
         <button
-          onClick={() =>
-            window.open("https://github.com/Sark-Rakib/My-Hero-App", "_blank")
-          }
+          onClick={() => window.open("https://github.com/Sark-Rakib", "_blank")}
           className="btn text-white bg-gradient-to-r from-[#632EE3] to-[#9F62F2] flex items-center gap-1"
         >
           <img className="h-5 w-5" src={Github} alt="GitHub" /> Contribute
